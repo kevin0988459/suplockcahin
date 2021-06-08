@@ -67,30 +67,73 @@
         </div>
     </nav>
     <div class='login_panel'>
-        <h2 class='zhuce'>註冊</h2>
-        <h3 class='welcome'>歡迎加入投資行列</h3>
-        <div class='log_reg'>
-            <button class= '_switch'>SIGN IN</button>
-            <button class="_switch">I'M NEW HERE</button>
-        </div>
-        <form action="">
-            <div class = 'form_part'>
-                <h3 class="subtitle">E-mail</h3>
-                <input type="email" class = 'form_input' id= "">
+        <form id = "loginform">
+            <h2 class='zhuce'>登入</h2>
+            <h3 class='welcome'>歡迎加入投資行列</h3>
+            <div class='log_reg'>
+                <a type = "" class= '_switch' href="#">SIGN IN</a>
+                <a type = "" class="_switch" onclick="regis()" href="#">I'M NEW HERE</a>
             </div>
-            <div class = 'form_part'>
-                <h3 class="subtitle">Password</h3>
-                <input type="password" class = 'form_input' id= "">
+                <div class = 'form_part'>
+                    <h3 class="subtitle">E-mail</h3>
+                    <input type="email" class = 'form_input' id= "">
+                </div>
+                <div class = 'form_part'>
+                    <h3 class="subtitle">Password</h3>
+                    <input type="password" class = 'form_input' id= "">
+                </div>
+                <label ><input type="checkbox" class="keep_in"> 保持登入</label>
+                <div class='forget_password'>
+                <a href="">忘記密碼</a>
+                </div>
+                <div class = 'form_part'>
+                    <button class="register_btn">登入</button>
+                </div>
+        </form>
+        <form class="register_panel" id = "registerform">
+            <h2 class='zhuce'>註冊</h2>
+            <h3 class='welcome'>歡迎加入投資行列</h3>
+            <div class='log_reg'>
+                <a type = "" class= '_switch' onclick="sing()" href="#">SIGN IN</a>
+                <a type = "" class="_switch" href="#">I'M NEW HERE</a>
             </div>
-            <label ><input type="checkbox" class="keep_in"> 保持登入</label>
-            <div class='forget_password'>
-            <a href="">忘記密碼</a>
-            </div>
-            <div class = 'form_part'>
-                <button class="register_btn">註冊</button>
-            </div>
+                <div class = 'form_part'>
+                    <h3 class="subtitle">E-mail</h3>
+                    <input type="email" class = 'form_input' id= "">
+                </div>
+                <div class = 'form_part'>
+                    <h3 class="subtitle">Password</h3>
+                    <input type="password" class = 'form_input' id= "">
+                </div>
+                <div class = 'form_part'>
+                    <h3 class="subtitle">Confirm Password</h3>
+                    <input type="password" class = 'form_input' id= "">
+                </div>
+                <div class = 'form_part'>
+                    <h3 class="subtitle">Phone</h3>
+                    <input type="password" class = 'form_input' id= "">
+                </div>
+                <label ><input type="checkbox" class="keep_in"> 保持登入</label>
+                <div class='forget_password'>
+                <a href="">忘記密碼</a>
+                </div>
+                <div class = 'form_part'>
+                    <button class="register_btn">註冊</button>
+                </div>
         </form>
     </div>
     
+<script>
+var x = document.getElementById("loginform")
+var y=  document.getElementById("registerform")
+function regis(){
+    y.style.display="block";
+    x.style.display='none';
+}
+function sing(){
+    y.style.display="none";
+    x.style.display='block';
+}
+</script>
 </body>
 </html>
