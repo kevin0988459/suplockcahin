@@ -57,6 +57,36 @@ body {
     justify-content: center;
     align-items: center;
 }
+.intro_card{
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-top: 2em;
+}
+.card_detail{
+    width:250px;
+    height:150px;
+    background-color: #090f1a;
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:3px 3px 9px #ffd60a;
+}
+.card_number{
+    font-size: 2em;
+    line-height: 1.8em;
+    color: #ffc300;
+    font-weight: 600;
+}
+.card_title{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
 .top_back_ground{
     color:#e9ecef;
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('icon/investor_back_rotate.jpeg');
@@ -69,22 +99,24 @@ body {
     text-align: center;
     margin-top: 20vh;
     margin-bottom: 0.5em;
-    font-size: 2.5em;
+    font-size: 4em;
     font-weight:bold;
 }
 .intro_article{
     text-align: center;
     width: 50%;
     margin-left: 25%;
+    font-weight:500;
+    font-size: 1.5em;
 }
 .investment_table{
     display: flex;
     flex-direction: column;
     align-items: center;
     width : 85%;
-    height: 75vh;
+    height: 600px;
     margin-top: 1px;
-    border: 1px solid #343a40;
+    border: 2px solid #ffd60a;
     border-radius: .3em;
     color: #e9ecef;
     margin-bottom: 50px;
@@ -97,7 +129,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: #343a40 2px solid;
+    border-bottom: #ffd60a 2px solid;
     border-radius: .3em;
     background-color: #0d172b;
 }
@@ -130,6 +162,10 @@ body {
 .company_title{
     font-size: 2em;
     width:45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 .intro_title2{
     width: 18%;
@@ -159,13 +195,79 @@ a:hover{
 .more_info:hover{
     color: #ffc300;
 }
+.direction{
+    margin-top: 20px;
+    height:20vh;
+    border:1px solid white
+}
 .subject{
-    margin-top: 80px;
+    margin-top: 40px;
     width : 85%;
     height:2em;
-    color: #ffc300;
-    font-size: 1.5em;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 800;
 }
+.text_on_border{
+    margin-top: 5%;
+    width :85%;
+    height : 120vh;
+    border: 2px solid #ffd60a;
+    position: relative;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.title_wrapper{
+    top : -23px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.text_above{
+    color : white;
+    background-color: #14213d;
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 45px;
+    font-weight: 800;
+}
+.inside_intro{
+    height: 200px;
+    width: 35%;
+    color : white;
+}
+.text_inside{
+    font-size: 120px;
+    font-weight: 700;
+    
+}
+.subtex_inside{
+
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 12.5px;
+}
+.sub_p{
+
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 12.5px;
+    line-height: 1.5em;
+}
+
+#caret_svg{
+    margin-left: 1px;
+    filter: invert(99%) sepia(0%) saturate(7399%) hue-rotate(179deg) brightness(126%) contrast(96%);
+}
+#exchange_svg{
+    filter: invert(99%) sepia(0%) saturate(7399%) hue-rotate(179deg) brightness(126%) contrast(96%);
+}
+
 @media(min-width:1400px){
     .investment_table {
         width: 60%;
@@ -173,4 +275,22 @@ a:hover{
     .subject{
         width: 60%;
     }
+    .intro_card{
+        width:65%
+    }
+    .text_on_border{
+        width: 65%;
+    }
+}
+@media(max-width:1600px){
+    .card_detail{
+        width:200px;
+        height: 120px;
+    }
+    .inside_intro{
+        width:50%
+    }
+}
+.inside_intro:hover{
+    color:#ffc300;
 }
