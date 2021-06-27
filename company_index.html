@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的首頁</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="company_index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id = 'navbar'>
+        <i class="fab fa-staylinked fa-2x" id='figure1'></i>
+        <!--icon-->
+        <a class="navbar-brand" href="#">Suplock Chain</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        訂單
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">應收 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">驗證</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">投資</a>
+                </li>
+            </ul>
+            <div class="form-inline my-1 my-lg-0" >
+                <input id = "plus" type="image" aria-label="Search" img src="icon/plus-circle.svg" width="15" height='15'>
+                <label for = 'plus'class="ml-1 mr-3" id = "remain">餘額：10,000</label> 
+                <input class=" mx-3 "id="message" type="image" aria-label="Search" img src="icon/envelope.svg" >
+                <input class=" mx-3 "id="user" type="image" aria-label="Search" img src="icon/person-circle.svg" >
+                
+            </div>
+        </div>
+    </nav>
+    <main class="main_content">
+        <section  class="introcard_button">
+            <div class="brand">
+                <img id = "mtk" src="icon/MTK.jpeg" alt="">
+            </div>
+            <h2 class="company_name">mediaTech</h2>
+            <h3 class="sub_ID">@177321</h3>
+            <div class="account_link">
+                <div class="link_box">
+                    <div class= "icon_title">
+                        <img id='align' src="icon/bar-chart.svg" alt="">
+                    </div>
+                    <h2 class="box_title">Overview</h2>
+                </div>
+                <div class="link_box">
+                    <div class= "icon_title">
+                        <img id='align' src="icon/card-text.svg" alt="">
+                    </div>
+                    <h2 class="box_title">information</h2>
+                </div>
+                <div class="link_box">
+                    <div class= "icon_title">
+                        <img id='align' src="icon/wallet.svg" alt="">
+                    </div>
+                    <h2 class="box_title">Wallet</h2>
+                </div>
+                <div class="link_box">
+                    <div class= "icon_title">
+                        <img id='align' src="icon/key.svg" alt="">
+                    </div>
+                    <h2 class="box_title">Account security</h2>
+                </div>
+            </div>
+        </section>
+        <section class="introcard_button-1">
+            <div class = 'right_label'>
+                <h2 class = 'label_text'>公司帳號</h2>
+            </div>
+            <div class="upper_button">
+                <div class='button_inside'></div>
+                <div class='button_inside'></div>
+                <div class='button_inside'></div>
+            </div>
+            <div class="lower_content">
+                <div class="money_table">
+                    <div class="deposit">入金</div>
+                    <div class="withdraw">出金</div>
+                </div>
+                <div class = miscell>
+                    <div class = 'miscell-1'></div>
+                    <div class="miscell-1"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<footer class="footer">
+    <div class="footerDetail">
+        <a href=""><i class="fab fa-staylinked fa-2x" id='figure1'></i></a>
+        <a href="" class="brandName">Supblock</a>
+        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, quam iure vero ea, tempora voluptas ducimus rerum minima beatae et quia labore officiis provident corrupti!</p>
+    </div>
+    <div class="footerDetail">
+        <h5 class="footerHead lineHeight">關於我們</h5>
+        <ul class="no-bullets">
+            <li class="lineHeight"><a href="#">Suplock</a></li>
+            <li class="lineHeight">團隊介紹</li>
+            <li class="lineHeight">聯繫我們</li>
+        </ul>
+    </div>
+
+    <div class="footerDetail">
+        <h5 class="footerHead lineHeight">客戶聲明</h5>
+        <ul class="no-bullets">
+            <li class="lineHeight">免責聲明</li>
+            <li class="lineHeight">隱私條款</li>
+            <li class="lineHeight">使用條款</li>
+        </ul>
+    </div>
+    <div class="footerDetail">
+        <h5 class="footerHead lineHeight">客戶服務</h5>
+        <ul class="no-bullets">
+            <li class="lineHeight">幫助中心</li>
+            <li class="lineHeight">費率說明</li>
+            <li class="lineHeight">問題回覆</li>
+        </ul>
+    </div>
+    <div></div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+</html>
