@@ -1,3 +1,12 @@
+a{
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover{
+    text-decoration: none;
+    color: black ;
+}
 body{
     background-color: rgb(240, 238, 238)
 }
@@ -26,7 +35,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    
 }
 .brand{
     margin-top: 10%;
@@ -90,7 +98,7 @@ body{
 }
 .right_label{
     height:10%;
-    padding:5%;
+    padding-top:5%;
   
 }
 .label_text{
@@ -114,6 +122,68 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    box-shadow:0px 0px 9px rgb(155, 154, 154);
+    padding: 2%;
+    transition: all .3s ease-in-out;
+    border-radius: 1em;
+}
+.button_inside:hover{
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+}
+.card_title{
+    font-size: 1.8em;
+    border-bottom: .1em solid grey;
+}
+.card_title-1{
+    width: 100%;
+    font-size: 1.8em;
+    border-bottom: .1em solid grey;
+}
+.sub_card_text{
+    font-size: 1em;
+    color:#616970 ;
+    margin-top: 2%;
+}
+.sub_card_text-1{
+    width: 80%;
+    font-size: 1em;
+    color:#616970 ;
+    margin-top: 2%;
+}
+.credit_amount{
+    margin-top: 2%;
+    font-size: 1.4em;
+}
+.credit_num{
+    font-size:2.5em ;
+    color: #e9bb24;
+}
+.send_receive{
+    width:90%;
+    height:50%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+.send{
+    width: 50%;
+    text-align: center;
+}
+.receive{
+    width: 50%;
+    text-align: center;
+}
+.send_title{
+    font-size: 2.5em;
+    color: rgb(233, 1, 1);
+}
+.receive_title{
+    font-size: 2.5em;
+    color: rgb(0, 165, 0);
+}
+.already_{
+    font-size: 1.2em;
 }
 .lower_content{
     margin-top: 3%;
@@ -130,11 +200,25 @@ body{
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    box-shadow:0px 0px 9px rgb(155, 154, 154);
+    text-align: center;
+    transition: all .3s ease-in-out;
+    border-radius: 1em;
 }
 .deposit{
     border-right: 1px solid cadetblue;
     width: 50%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.withdraw{
+    padding: 2%;
+    width: 50%;
+    text-align: center;
 }
 .miscell{
     width: 30%;
@@ -143,9 +227,58 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    box-shadow:0px 0px 9px rgb(155, 154, 154);
+    transition: all .3s ease-in-out;
+    border-radius: 1em;
+}
+.miscell:hover{
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
 }
 .miscell-1{
     height:50%;
+    text-align: center;
+    border-bottom: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+.miscell-1:last-child{
+    border: none;
+}
+.miscell-1:hover{
+    background-color: #d7dadd;
+    border-radius:1em ;
+}
+.loan_title{
+    font-size: 1.8em;
+    margin-top: 1em;
+}
+.loan_sub{
+    max-width: 60%;
+    font-size: 1.2em;
+    color:#616970 ;
+    margin-top: 5%;
+    text-align: center;
+}
+.deposit_table{
+    height:80%;
+    width: 100%;
+  
+}
+.table_ele{
+    height: 15%;
+    border-bottom: .2em solid  rgb(240, 238, 238);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ele_text{
+    font-size: .9em;
+    margin-top: none;
 }
 @media(max-width:1200px){
     .box_title{
