@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="invest_index.css">
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body><nav class="navbar navbar-expand-lg navbar-dark" id = 'navbar'>
         <i class="fab fa-staylinked fa-2x" id='figure1'></i>
@@ -77,19 +78,29 @@
         </div>
         <div class = 'intro_card'>
             <div class = card_detail>
-                <h2 class="card_number">$1,234,567</h2>
+                <div class = "inline_money">
+                    <h1 class='card_number'>$</h1>
+                    <h2 class="card_number slowNumber" >1,234,567</h2>
+                </div>
                 <h2 class="card_title" >總交易量</h2>
             </div>
             <div class = card_detail>
-                <h2 class="card_number">$234,000</h2>
+                <div class = "inline_money">
+                    <h1 class='card_number'>$</h1>
+                    <h2 class="card_number slowNumber" >222,567</h2>
+                </div>
                 <h2 class="card_title" >總鎖倉量</h2>
             </div>
             <div class = card_detail>
-                <h2 class="card_number">643</h2>
+                <h2 class="card_number slowNumber">643</h2>
                 <h2 class="card_title" >可申購數</h2>
             </div>
             <div class = card_detail>
-                <h2 class="card_number">9.8%</h2>
+                <div class = "inline_money">
+                    
+                    <h2 class="card_number slowNumber" >9.8</h2>
+                    <h1 class='card_number'>%</h1>
+                </div>
                 <h2 class="card_title" >平均年化</h2>
             </div>
         </div>
@@ -161,7 +172,7 @@
             <div class="inside_intro">
                 <h2 class="text_inside">3</h2>
                 <h3 class='subtex_inside'>獲取每期固定收益</h3>
-                <p class="sub_p">Sublock會根據債權利率，每期自動將收益轉入您的地址。</p>
+                <p class="sub_p">Suplock會根據債權利率，每期自動將收益轉入您的地址。</p>
             </div>
         </section>
     </main>
@@ -199,4 +210,5 @@
         <div></div>
     </footer>
 </body>
+<script type="text/javascript" src="slowNumber.js"></script>
 </html>

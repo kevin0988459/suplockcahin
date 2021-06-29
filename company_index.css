@@ -126,6 +126,7 @@ body{
     padding: 2%;
     transition: all .3s ease-in-out;
     border-radius: 1em;
+    text-align: center;
 }
 .button_inside:hover{
     box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;

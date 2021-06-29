@@ -76,6 +76,12 @@ body {
     align-items: center;
     box-shadow:3px 3px 9px #ffd60a;
 }
+.inline_money{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .card_number{
     font-size: 2em;
     line-height: 1.8em;
